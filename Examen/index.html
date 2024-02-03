@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFL</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Pendientes</h1>
+    <button onclick="getPendingsIds()" id="btnIds">(Solo ID's)</button>
+    <button onclick="getPendingsIdsAndTitles()" id="btnIdsTitles">(ID's y titles)</button>
+    <button onclick="getUnresolvedPendings()" id="btnUnresolved">(sin Resolver)</button>
+    <button onclick="getResolvedPendings()" id="btnResolved">(Resueltos)</button>
+    <button onclick="getPendingsWithUserId()" id="btnIdsUserId">(ID y userId)</button>
+    <button onclick="getResolvedPendingsWithUserId()" id="btnResolvedUserId">(Resueltos)</button>
+    <button onclick="getUnresolvedPendingsWithUserId()" id="btnUnresolvedUserId">(sin Resolver)</button>
+    <div id="todoList"></div>
+    
+    <script src="./test.js"></script>
+</body>
+</html>
