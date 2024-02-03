@@ -44,7 +44,7 @@ function changeButtonStyle(buttonId) {
 }
  
 
-//GET LIST
+// GET LIST
 function getPendingsIds() {
     fetch(url)
         .then(response => response.json())
@@ -152,6 +152,8 @@ function getUnresolvedPendingsWithUserId() {
             changeButtonStyle('btnUnresolvedUserId'); 
         })
 }
+
+
 
 
 
